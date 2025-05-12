@@ -11,8 +11,8 @@ export default function Navbar() {
                 <div className="w-16"></div>
                 {/* Centered name and icon */}
                 <div className="flex items-center justify-center flex-grow">
-                    <PiHandWavingFill className="text-light-logo dark:text-dark-logo text-2xl" />
-                    <h1 className="text-light-logo dark:text-dark-logo text-xl font-bold ml-2">Hi, I'm Sen</h1>
+                    <PiHandWavingFill className="text-orange-300 dark:text-yellow-500 text-2xl" />
+                    <h1 className="text-light-logo dark:text-dark-logo text-xl font-bold ml-2 font-mono">Hi, I'm Sen</h1>
                 </div>
                 {/* <ul className="flex space-x-4">
                     <li>

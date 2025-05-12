@@ -1,4 +1,6 @@
+import { FaMoon } from "react-icons/fa6";
 import { useTheme } from "../context/ThemeContext";
+import { MdSunny } from "react-icons/md";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
@@ -14,7 +16,13 @@ export default function ThemeToggle() {
         className={`inline-block h-4 w-4 rounded-full bg-light-toggleBall dark:bg-dark-toggleBall transform transition-transform duration-200 ${
           theme === "light" ? "translate-x-1" : "translate-x-7"
         }`}
-      />
+      >
+        {theme === "light" ? (
+          <MdSunny className="text-yellow-500 size-4" />
+        ) : (
+            <FaMoon className="text-yellow-500 size-4" />
+        )}
+      </span>
     </button>
   );
 }

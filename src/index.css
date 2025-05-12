@@ -1,4 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    [data-theme="light"] {
+        --scrollbar-track: #E8DCE5;
+        --scrollbar-thumb: #C9A9E9;
+        --scrollbar-thumb-hover: #B392D6;
+        --accent: #C9A9E9;
+        --toggleBall: #FFF5FA;
+        --border: #E8DCE5;
+    }
+
+    [data-theme="dark"] {
+        --scrollbar-track: #5C5470;
+        --scrollbar-thumb: #B392D6;
+        --scrollbar-thumb-hover: #9E76B4;
+        --accent: #B392D6;
+        --toggleBall: #F8E8F0;
+        --border: #5C5470;
+    }
+}
+
+@layer utilities {
+
+    /* Animated gradient background for light theme */
+    .animated-bg-light {
+        background: linear-gradient(45deg,
+                #F3E8EE 0%,
+                /* light-bg */
+                #C9A9E9 25%,
+                /* light-accent */
+                #FFAA80 50%,
+                /* light-icon */
+                #D974A1 75%,
+                /* light-linkText */
+                #F3E8EE 100%
+                /* light-bg */
+            );
+        background-size: 200% 200%;
+        animation: gradientShift 15s ease infinite;
+    }
+
+    /* Animated gradient background for dark theme */
+    .animated-bg-dark {
+        background: linear-gradient(45deg,
+                #2A2438 0%,
+                /* dark-bg */
+                #B392D6 25%,
+                /* dark-accent */
+                #FFB39B 50%,
+                /* dark-icon */
+                #F4A8C1 75%,
+                /* dark-linkText */
+                #2A2438 100%
+                /* dark-bg */
+            );
+        background-size: 200% 200%;
+        animation: gradientShift 15s ease infinite;
+    }
+
+    /* Keyframes for gradient animation */
+    @keyframes gradientShift {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    } 
+
+    #embedded-badge-1bd674bf-bab2-4026-84bd-ffeb7b70df1c body {
+        border: none;   
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in {
+        animation: fade-in 1s ease-out;     
+    }
+
+    @keyframes fade-in-delay {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-delay {
+        animation: fade-in-delay 2s ease-out;     
+    }
+
+    .animationDelay-github {
+        animation-delay: 0.6s;
+    }
+
+    .animationDelay-slideleft {
+        animation-delay: 0.2s;
+    }
+
+    .animationDelay-github {
+        animation-delay: 0.6s;
+    }
+
+    .animationDelay-leetcard {
+        animation-delay: 0.4s;
+    }
+
+    .animationDelay-awsbadge {
+        animation-delay: 0.6s;
+    }
+    
+    /* Slide left animation for GitHub */
+    @keyframes slide-left {
+        0% {
+            transform: translateX(15rem);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0rem);
+            opacity: 1;
+        }
+    }
+    
+    .animate-slide-left {
+        animation: slide-left 1s ease-out forwards;
+    }
+    
+    /* Slide right animation for AWS badge */
+    @keyframes slide-right {
+        0% {
+            transform: translateX(-15rem);
+            opacity: 0;
+        }
+    
+        100% {
+            transform: translateX(0rem);
+            opacity: 1;
+        }
+    }
+    
+    .animate-slide-right {
+        animation: slide-right 1s ease-out forwards; 
+    }
+
+    .slick-slide {
+        transform: translateX(100%);
+        transition: transform 0.5s ease;
+    }
+
+    .slick-slide.slick-active {
+        transform: translateX(0);     
+    }
+
+    /* Fade-in animation */
+    @keyframes fade-in-delay {
+        0% {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-fade-in-delay {
+        animation: fade-in-delay 1s ease-out;
+    }
+
+    /* Fade-in with slide for project cards */
+    @keyframes fade-in-slide {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .animate-fade-in-slide {
+        animation: fade-in-slide 0.8s ease-out forwards;
+    }
+}

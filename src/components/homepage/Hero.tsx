@@ -1,42 +1,62 @@
+import { Link } from 'react-router-dom';
+import profileImage from '../../assets/images/profile/profile_2_transparents.png';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
+import { MdOutlineMail } from 'react-icons/md';
+
 export default function Hero() {
 
     return (
-        <section
-            className={`min-h-screen flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-text dark:text-dark-text bg-light-bg dark:bg-dark-bg`}
-        >
-            {/* Glassmorphism Card without Profile Image */}
-            <div
-                className={`backdrop-blur-md bg-light-bg/10 dark:bg-dark-bg/10 border border-light-border/20 dark:border-dark-border/20 rounded-2xl p-6 md:p-8 w-full max-w-sm md:max-w-md shadow-xl text-center`}
-            >
-                <h1 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2 text-light-logo dark:text-dark-logo">
+        <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg">
+            <div className="backdrop-blur-md animated-bg-dark dark:animated-bg-light border-2 border-light-buttonHoverBg/20 dark:border-dark-buttonHoverBg/20 rounded-2xl p-6 md:p-8 w-full max-w-sm md:max-w-md shadow-xl text-center">
+                {/* Profile Picture */}
+                <div className="flex justify-center mb-4 md:mb-6">
+                    <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-light-buttonHoverBg dark:border-dark-buttonHoverBg bg-dark-buttonText dark:bg-dark-buttonText">
+                        <img
+                            src={profileImage}
+                            alt="Profile"
+                            className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full transition-transform duration-200 transform hover:scale-105"
+                        />
+                    </div>
+                </div>
+                <h1 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2 text-light-buttonText">
                     Sen Doan
                 </h1>
-                <p className={`text-light-accent dark:text-dark-accent font-medium text-sm md:text-base`}>
+                <p className="text-light-buttonText font-medium text-sm md:text-base">
                     Software Engineer
                 </p>
             </div>
 
             {/* Introduction */}
             <div className="max-w-sm md:max-w-xl text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-bold mb-3 md:mb-4 leading-tight">
+                <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 leading-tight text-light-buttonText dark:text-dark-buttonText">
                     Building Scalable Apps <br /> with Beautiful Interfaces
                 </h2>
-                <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80">
-                    Over 5 years of experience in full stack development with expertise in PHP, Laravel, React, Next.js, and UI/UX design. Currently pursuing a Master's in CS.
+                <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText">
+                    Proficient in full stack development with expertise in PHP, Laravel, Node.js, React, Javascript/Typescript, Next.js, UI/UX design, and AWS, following Agile methodologies and best coding practices.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start">
-                    <a
-                        href="#projects"
-                        className={`bg-light-accent dark:bg-dark-accent hover:bg-opacity-90 px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold text-light-bg dark:text-dark-bg transition-opacity duration-200`}
+                <div className="flex gap-3 md:gap-4">
+                    <Link
+                        to="https://linkedin.com/in/sendoan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-light-text dark:text-dark-logo hover:text-light-accent dark:hover:text-dark-accent transform hover:rotate-12 transition-transform duration-200"
                     >
-                        See My Work
-                    </a>
-                    <a
-                        href="#contact"
-                        className={`border border-light-accent dark:border-dark-accent hover:bg-light-accent dark:hover:bg-dark-accent px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold hover:text-light-bg dark:hover:text-dark-bg transition-colors duration-200`}
+                        <FaLinkedinIn className="inline-block size-4 md:size-5" />
+                    </Link>
+                    <Link
+                        to="https://github.com/SenDTT"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-light-text dark:text-dark-logo hover:text-light-accent dark:hover:text-dark-accent transform hover:rotate-12 transition-transform duration-200"
                     >
-                        Contact Me
-                    </a>
+                        <FaGithub className="inline-block size-4 md:size-5" />
+                    </Link>
+                    <Link
+                        to="mailto:sendoan.sophie@gmail.com"
+                        className="text-light-text dark:text-dark-logo hover:text-light-accent dark:hover:text-dark-accent transform hover:rotate-12 transition-transform duration-200"
+                    >
+                        <MdOutlineMail className="inline-block size-4 md:size-5" />
+                    </Link>
                 </div>
             </div>
         </section>

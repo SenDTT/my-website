@@ -74,7 +74,7 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card snap-start flex-none w-80 md:w-96 bg-dark-tertiaryBg dark:bg-dark-popupText rounded-2xl shadow-lg p-6 flex flex-col animationDelay-slideleft"
+                        className="project-card snap-start flex-none w-80 md:w-96 bg-dark-bg dark:bg-dark-popupText rounded-2xl shadow-lg p-6 flex flex-col animationDelay-slideleft"
                         tabIndex={0}
                     >
                         <a

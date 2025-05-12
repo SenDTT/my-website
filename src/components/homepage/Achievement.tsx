@@ -7,7 +7,7 @@ export default function Achievement() {
 
     return (
         <div className="flex flex-col items-start justify-start md:min-h-screen bg-dark-contactBg dark:bg-light-contactBg text-light-text dark:text-dark-text md:text-light-buttonText md:dark:text-dark-buttonText md:bg-light-bg md:dark:bg-dark-bg">
-            <h1 className="hidden md:flex text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay md:py-0 py-4 w-full text-center md:text-left">
+            <h1 className="hidden md:flex text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay md:py-0 py-4 w-full text-center md:text-left px-4 md:px-6">
                 Skills & Achievements
             </h1>
             <div className="flex flex-col md:flex-row items-stretch justify-center w-full md:min-h-screen md:h-screen md:gap-0 gap-4">

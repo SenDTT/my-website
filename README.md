@@ -1,58 +1,59 @@
-# my-website
+# 📌 My Portfolio Website
 
-A personal portfolio website built with Next.js, showcasing my full-stack development skills. The site is deployed on Vercel and highlights my experience in web development, UI/UX design, and project deployment.
+A **personal portfolio website** built using **React**, **TypeScript**, and **Tailwind CSS**, designed to showcase my skills and experience in **full-stack web development**, **UI/UX design**, and a variety of personal and professional **projects**.
 
-# React + TypeScript + Vite
+Visit my website: [sendoan.com](#https://sendoan.com/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🔧 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React + TypeScript
+- **Styling**: Tailwind CSS
+- **Bundler**: Vite
+- **Linting**: ESLint with TypeScript support
+- **Deployment**: Vercel
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+- ⚡ Fast, modern setup with Vite and HMR
+- 🎨 Fully responsive UI with TailwindCSS
+- 🧠 Type-safe code with TypeScript
+- 💻 Showcases frontend, backend, and UI/UX capabilities
+- 📁 Organized, scalable project structure
+- 🌐 Easy deployment to Vercel
+
+---
+
+## 🛠 Development Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/my-website.git
+cd my-website
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install Dependencies
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+```bash
+npm install
+# or
+yarn install
 ```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+---
+
+## 📄 License
+
+Let me know if you'd like help customizing this with your actual project links, images, or a "Projects" section.

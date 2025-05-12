@@ -1,7 +1,11 @@
 import { useEffect, useRef } from 'react';
-import portfolioImage from '../../assets/images/portfolio.png';
+import portfolioImage from '../../assets/images/portfolio_light.png';
 import portfolioDark from '../../assets/images/portfolio_dark.png';
+import topdev from '../../assets/images/topdev.png';
+import vnwebsubmit from '../../assets/images/vnwebsubmit.jpeg';
 import cslantImage from '../../assets/images/cslant.jpeg';
+import toole from '../../assets/images/toole.png';
+import tomia from '../../assets/images/tomia.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -12,12 +16,12 @@ export default function Projects() {
     const projects = [
         {
             title: "Applancer JSC (TopDev): Top IT Recruitment platform in Vietnam",
-            image: "https://c.topdevvn.com/v4/assets/images/td-logo.png",
+            image: topdev,
             link: "https://topdev.vn/",
         },
         {
             title: "QR Code: QR Code Generator",
-            image: "https://c.topdevvn.com/vws/uploads/2025/03/2-Medium.jpeg",
+            image: vnwebsubmit,
             link: "https://topdev.vn/vws/",
         },
         {
@@ -27,12 +31,12 @@ export default function Projects() {
         },
         {
             title: "E-Commerce: Ecommerce Web Apps And Tools",
-            image: "https://toolecommerce.com/wp-content/uploads/2023/06/White-Logo-1.png",
+            image: toole,
             link: "https://toolecommerce.com/",
         },
         {
             title: "TOMIA - Modern AI School Management Software",
-            image: "https://dea2fb0dyoiuo.cloudfront.net/wp-content/uploads/2022/01/logo-2.png",
+            image: tomia,
             link: "https://tomia.vn/",
         },
         {
@@ -87,7 +91,7 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="project-card snap-start flex-none w-80 md:w-96 bg-dark-bg dark:bg-dark-popupText rounded-2xl shadow-lg p-6 flex flex-col animationDelay-slideleft"
+                        className="project-card snap-start flex-none w-80 md:w-85 bg-dark-bg dark:bg-dark-popupText rounded-2xl shadow-lg p-6 flex flex-col animationDelay-slideleft"
                         tabIndex={0}
                     >
                         <Link
@@ -96,7 +100,7 @@ export default function Projects() {
                             rel="noopener noreferrer"
                             className="inline-block px-4 py-2 rounded transition-colors text-center"
                         >
-                            <div className='flex justify-center items-center mb-4 h-48 animate-fade-in p-6'>
+                            <div className='flex justify-center items-center mb-4 h-40 animate-fade-in p-6'>
                                 <img
                                     src={project.image}
                                     alt={project.title}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import profileImage from '../../assets/images/profile/profile_2_transparents.png';
+import profileImage from '../../assets/images/profile/profile.png';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
 

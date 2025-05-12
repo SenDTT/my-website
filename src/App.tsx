@@ -6,7 +6,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout children={undefined} />}>
+        <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           {/* <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />

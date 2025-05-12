@@ -1,9 +1,13 @@
 import { useEffect, useRef } from 'react';
 import portfolioImage from '../../assets/images/portfolio.png';
+import portfolioDark from '../../assets/images/portfolio_dark.png';
+import cslantImage from '../../assets/images/cslant.jpeg';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../../context/ThemeContext';
 
 export default function Projects() {
     const scrollRef = useRef<HTMLDivElement>(null);
+    const { theme } = useTheme();
 
     const projects = [
         {
@@ -33,12 +37,12 @@ export default function Projects() {
         },
         {
             title: "CSlant | Open Source Developer Team",
-            image: "https://assets.cslant.com/images/logo/cslant-logo.png",
+            image: cslantImage,
             link: "https://cslant.com/",
         },
         {
             title: "Portfolio Website with Theme Toggle",
-            image: portfolioImage,
+            image: theme == 'light' ? portfolioImage : portfolioDark,
             link: "https://github.com/SenDTT/my-website",
         },
     ];
@@ -67,13 +71,16 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center py-6 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4">
-            <h1 className="text-3xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right">
+        <div className="flex flex-col items-center justify-center py-8 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4">
+            <h1 className="text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right mt-6 md:mt-0">
                 Projects
             </h1>
+            <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText text-center md:text-right w-full">
+                Here are some of the projects I have worked on. Click on the images to view them.
+            </p>
             <div
                 ref={scrollRef}
-                className="w-full overflow-x-auto flex flex-row gap-6 p-4 scroll-smooth snap-x snap-mandatory scrollbar-thin scrollbar-light dark:scrollbar-dark"
+                className="w-full overflow-x-auto flex flex-row gap-6 p-4 scroll-smooth snap-x snap-mandatory scrollbar-thin scrollbar-light dark:scrollbar-dark mb-6 md:mb-0"
                 role="region"
                 aria-label="Projects carousel"
             >

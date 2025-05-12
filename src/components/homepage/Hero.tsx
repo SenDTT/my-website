@@ -6,8 +6,8 @@ import { MdOutlineMail } from 'react-icons/md';
 export default function Hero() {
 
     return (
-        <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg">
-            <div className="backdrop-blur-md animated-bg-dark dark:animated-bg-light border-2 border-light-buttonHoverBg/20 dark:border-dark-buttonHoverBg/20 rounded-2xl p-6 md:p-8 w-full max-w-sm md:max-w-md shadow-xl text-center">
+        <section className="md:min-h-screen flex flex-col md:flex-row items-center md:justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg my-6 md:my-0">
+            <div className="backdrop-blur-md animated-bg-light dark:animated-bg-dark border-2 border-light-buttonHoverBg/20 dark:border-dark-buttonHoverBg/20 rounded-2xl p-6 md:p-8 w-full max-w-sm md:max-w-md shadow-xl text-center animate-slide-right animationDelay-slideleft">
                 {/* Profile Picture */}
                 <div className="flex justify-center mb-4 md:mb-6">
                     <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-light-buttonHoverBg dark:border-dark-buttonHoverBg bg-dark-buttonText dark:bg-dark-buttonText">
@@ -27,14 +27,14 @@ export default function Hero() {
             </div>
 
             {/* Introduction */}
-            <div className="max-w-sm md:max-w-xl text-center md:text-left">
+            <div className="max-w-sm md:max-w-xl text-center md:text-left animate-slide-left animationDelay-slideleft">
                 <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 leading-tight text-light-buttonText dark:text-dark-buttonText">
                     Building Scalable Apps <br /> with Beautiful Interfaces
                 </h2>
                 <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText">
                     Proficient in full stack development with expertise in PHP, Laravel, Node.js, React, Javascript/Typescript, Next.js, UI/UX design, and AWS, following Agile methodologies and best coding practices.
                 </p>
-                <div className="flex gap-3 md:gap-4">
+                <div className="flex gap-3 md:gap-4 justify-center md:justify-start">
                     <Link
                         to="https://linkedin.com/in/sendoan"
                         target="_blank"

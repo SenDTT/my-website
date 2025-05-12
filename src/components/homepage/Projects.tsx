@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import portfolioImage from '../../assets/images/portfolio.png';
+import { Link } from 'react-router-dom';
 
 export default function Projects() {
     const scrollRef = useRef<HTMLDivElement>(null);
@@ -16,19 +17,24 @@ export default function Projects() {
             link: "https://topdev.vn/vws/",
         },
         {
-            title: "miStable",
+            title: "miStable: Horse Trainer Communication Software, Syndication, Studs, Mobile App",
             image: "https://media.mistable.com/img/brand/logo.svg",
             link: "https://mistable.com/",
         },
         {
-            title: "E-Commerce: TooleCommerce",
+            title: "E-Commerce: Ecommerce Web Apps And Tools",
             image: "https://toolecommerce.com/wp-content/uploads/2023/06/White-Logo-1.png",
             link: "https://toolecommerce.com/",
         },
         {
-            title: "Tomia",
+            title: "TOMIA - Modern AI School Management Software",
             image: "https://dea2fb0dyoiuo.cloudfront.net/wp-content/uploads/2022/01/logo-2.png",
             link: "https://tomia.vn/",
+        },
+        {
+            title: "CSlant | Open Source Developer Team",
+            image: "https://assets.cslant.com/images/logo/cslant-logo.png",
+            link: "https://cslant.com/",
         },
         {
             title: "Portfolio Website with Theme Toggle",
@@ -61,7 +67,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg p-4 md:p-6">
+        <div className="flex flex-col items-center justify-center py-6 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4">
             <h1 className="text-3xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right">
                 Projects
             </h1>
@@ -77,13 +83,13 @@ export default function Projects() {
                         className="project-card snap-start flex-none w-80 md:w-96 bg-dark-bg dark:bg-dark-popupText rounded-2xl shadow-lg p-6 flex flex-col animationDelay-slideleft"
                         tabIndex={0}
                     >
-                        <a
-                            href={project.link}
+                        <Link
+                            to={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block px-4 py-2 rounded transition-colors text-center"
                         >
-                            <div className='flex justify-center items-center mb-4 h-48 animate-fade-in'>
+                            <div className='flex justify-center items-center mb-4 h-48 animate-fade-in p-6'>
                                 <img
                                     src={project.image}
                                     alt={project.title}
@@ -91,10 +97,10 @@ export default function Projects() {
                                 />
                             </div>
 
-                            <h2 className="text-base md:text-lg font-mono text-dark-buttonText dark:text-light-buttonText mb-2">
+                            <h2 className="text-sm md:text-base font-mono text-dark-buttonText dark:text-light-buttonText mb-2">
                                 {project.title}
                             </h2>
-                        </a>
+                        </Link>
                     </div>
                 ))}
             </div>

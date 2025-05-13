@@ -26,7 +26,7 @@ export default function Projects() {
         },
         {
             title: "miStable: Horse Trainer Communication Software, Syndication, Studs, Mobile App",
-            image: "https://media.mistable.com/img/brand/logo.svg",
+            image: "https://mistable-files.s3.amazonaws.com/img/brand/logo.svg",
             link: "https://mistable.com/",
         },
         {

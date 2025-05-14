@@ -12,7 +12,6 @@ Visit my website: [sendoan.com](https://sendoan.com/)
 - **Styling**: Tailwind CSS
 - **Bundler**: Vite
 - **Linting**: ESLint with TypeScript support
-- **Deployment**: Vercel
 
 ---
 
@@ -23,7 +22,6 @@ Visit my website: [sendoan.com](https://sendoan.com/)
 - 🧠 Type-safe code with TypeScript
 - 💻 Showcases frontend, backend, and UI/UX capabilities
 - 📁 Organized, scalable project structure
-- 🌐 Easy deployment to Vercel
 
 ---
 

@@ -2,7 +2,7 @@
 
 A **personal portfolio website** built using **React**, **TypeScript**, and **Tailwind CSS**, designed to showcase my skills and experience in **full-stack web development**, **UI/UX design**, and a variety of personal and professional **projects**.
 
-Visit my website: [sendoan.com](#https://sendoan.com/)
+Visit my website: [sendoan.com](https://sendoan.com/)
 
 ---
 

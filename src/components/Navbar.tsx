@@ -1,4 +1,5 @@
 //import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 import { PiHandWavingFill } from "react-icons/pi";
@@ -11,8 +12,10 @@ export default function Navbar() {
                 <div className="w-16"></div>
                 {/* Centered name and icon */}
                 <div className="flex items-center justify-center flex-grow">
-                    <PiHandWavingFill className="text-orange-300 dark:text-yellow-500 text-2xl" />
-                    <h1 className="text-light-logo dark:text-dark-logo text-xl font-bold ml-2 font-mono">Hi, I'm Sen</h1>
+                    <Link to="/" className="flex items-center justify-center flex-grow">
+                        <PiHandWavingFill className="text-orange-300 dark:text-yellow-500 text-2xl" />
+                        <h1 className="text-light-logo dark:text-dark-logo text-xl font-bold ml-2 font-mono">Hi, I'm Sen</h1>
+                    </Link>
                 </div>
                 {/* <ul className="flex space-x-4">
                     <li>

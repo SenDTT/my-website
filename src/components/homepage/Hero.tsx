@@ -11,11 +11,13 @@ export default function Hero() {
                 {/* Profile Picture */}
                 <div className="flex justify-center mb-4 md:mb-6">
                     <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-light-buttonHoverBg dark:border-dark-buttonHoverBg bg-dark-buttonText dark:bg-dark-buttonText">
-                        <img
-                            src={profileImage}
-                            alt="Profile"
-                            className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full transition-transform duration-200 transform hover:scale-105"
-                        />
+                        <Link to="/">
+                            <img
+                                src={profileImage}
+                                alt="Profile"
+                                className="absolute inset-1 w-[calc(100%-8px)] h-[calc(100%-8px)] object-cover rounded-full transition-transform duration-200 transform hover:scale-105"
+                            />
+                        </Link>
                     </div>
                 </div>
                 <h1 className="text-2xl md:text-3xl font-bold mb-1 md:mb-2 text-light-buttonText">

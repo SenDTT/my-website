@@ -6,6 +6,8 @@ import vnwebsubmit from '../../assets/images/vnwebsubmit.jpeg';
 import cslantImage from '../../assets/images/cslant.jpeg';
 import toole from '../../assets/images/toole.png';
 import tomia from '../../assets/images/tomia.png';
+import mistableapps from '../../assets/images/mistable_apps.png';
+import blueone from '../../assets/images/blueone.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 
@@ -30,6 +32,11 @@ export default function Projects() {
             link: "https://mistable.com/",
         },
         {
+            title: "miStable - Owner & Trainer App",
+            image: mistableapps,
+            link: "https://apps.apple.com/au/developer/99digital/id1023561068",
+        },
+        {
             title: "E-Commerce: Ecommerce Web Apps And Tools",
             image: toole,
             link: "https://toolecommerce.com/",
@@ -38,6 +45,11 @@ export default function Projects() {
             title: "TOMIA - Modern AI School Management Software",
             image: tomia,
             link: "https://tomia.vn/",
+        },
+        {
+            title: "BlueOne - makes AdBlue and auto chemicals",
+            image: blueone,
+            link: "https://blueone.vn/en/",
         },
         {
             title: "CSlant | Open Source Developer Team",

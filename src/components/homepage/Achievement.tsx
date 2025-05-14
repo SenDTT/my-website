@@ -40,7 +40,7 @@ export default function Achievement() {
                             <div
                                 className=""
                                 data-iframe-width="345"
-                                data-iframe-height="200"
+                                data-iframe-height="250"
                                 data-share-badge-id="1bd674bf-bab2-4026-84bd-ffeb7b70df1c"
                                 data-share-badge-host="https://www.credly.com"
                             ></div>

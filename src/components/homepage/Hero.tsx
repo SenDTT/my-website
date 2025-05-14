@@ -31,8 +31,8 @@ export default function Hero() {
                 <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4 leading-tight text-light-buttonText dark:text-dark-buttonText">
                     Building Scalable Apps <br /> with Beautiful Interfaces
                 </h2>
-                <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText">
-                    Proficient in full stack development with expertise in PHP, Laravel, Node.js, React, Javascript/Typescript, Next.js, UI/UX design, and AWS, following Agile methodologies and best coding practices.
+                <p className="text-xs md:text-sm mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText">
+                    I love building things for the web — simple, smooth and smart.
                 </p>
                 <div className="flex gap-3 md:gap-4 justify-center md:justify-start">
                     <Link

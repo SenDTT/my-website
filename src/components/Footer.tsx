@@ -7,8 +7,8 @@ export default function Footer() {
         >
             <div className="max-w-7xl mx-auto px-4 flex justify-center items-center gap-4 md:gap-0 text-center md:text-left">
                 {/* Copyright Text */}
-                <p className="text-xs md:text-sm flex items-center gap-2 text-light-contactText dark:text-dark-contactText">
-                    <FaRegCopyright className="inline-block size-3" /> {new Date().getFullYear()} Sen Doan. All rights reserved.
+                <p className="text-xs md:text-sm flex items-center gap-1 text-light-contactText dark:text-dark-contactText">
+                    <FaRegCopyright className="inline-block size-3" /> {new Date().getFullYear()} Sen Doan
                 </p>
             </div>
         </footer>

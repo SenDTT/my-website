@@ -7,6 +7,7 @@ import cslantImage from '../../assets/images/cslant.jpeg';
 import toole from '../../assets/images/toole.png';
 import tomia from '../../assets/images/tomia.png';
 import mistableapps from '../../assets/images/mistable_apps.png';
+import mistable from '../../assets/images/mistable.svg';
 import blueone from '../../assets/images/blueone.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
@@ -28,7 +29,7 @@ export default function Projects() {
         },
         {
             title: "miStable: Horse Trainer Communication Software, Syndication, Studs, Mobile App",
-            image: "https://mistable-files.s3.amazonaws.com/img/brand/logo.svg",
+            image: mistable,
             link: "https://mistable.com/",
         },
         {

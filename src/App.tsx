@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
+import LandmarkPoseAI from "./components/pages/LandmarkPoseAI";
+import LayoutWithoutFooter from "./components/LayoutWithoutFooter";
 
 export default function App() {
   return (
@@ -11,6 +13,10 @@ export default function App() {
           {/* <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} /> */}
+        </Route>
+        <Route element={<LayoutWithoutFooter />}>
+          <Route path="/landmark-pose-ai" element={<LandmarkPoseAI />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

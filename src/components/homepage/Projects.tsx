@@ -67,6 +67,7 @@ export default function Projects() {
             title: "Landmark Pose AI",
             image: landmarkPoseAi,
             link: "/landmark-pose-ai",
+            target: "_top"
         },
     ];
 
@@ -115,7 +116,7 @@ export default function Projects() {
                     >
                         <Link
                             to={project.link}
-                            target="_blank"
+                            target={project?.target ?? "_blank"}
                             rel="noopener noreferrer"
                             className="inline-block px-4 py-2 rounded transition-colors text-center"
                         >

@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "serve": "serve dist"
+    "serve": "serve dist --single"
   },
   "dependencies": {
     "react": "^19.1.0",

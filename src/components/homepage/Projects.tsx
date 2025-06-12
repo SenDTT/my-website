@@ -19,6 +19,17 @@ export default function Projects() {
 
     const projects = [
         {
+            title: "Landmark Pose AI",
+            image: landmarkPoseAi,
+            link: "/landmark-pose-ai",
+            target: "_top"
+        },
+        {
+            title: "Portfolio Website with Theme Toggle",
+            image: theme == 'light' ? portfolioImage : portfolioDark,
+            link: "https://github.com/SenDTT/my-website",
+        },
+        {
             title: "Applancer JSC (TopDev): Top IT Recruitment platform in Vietnam",
             image: topdev,
             link: "https://topdev.vn/",
@@ -57,17 +68,6 @@ export default function Projects() {
             title: "CSlant | Open Source Developer Team",
             image: cslantImage,
             link: "https://cslant.com/",
-        },
-        {
-            title: "Portfolio Website with Theme Toggle",
-            image: theme == 'light' ? portfolioImage : portfolioDark,
-            link: "https://github.com/SenDTT/my-website",
-        },
-        {
-            title: "Landmark Pose AI",
-            image: landmarkPoseAi,
-            link: "/landmark-pose-ai",
-            target: "_top"
         },
     ];
 

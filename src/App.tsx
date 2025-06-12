@@ -16,7 +16,6 @@ export default function App() {
         </Route>
         <Route element={<LayoutWithoutFooter />}>
           <Route path="/landmark-pose-ai" element={<LandmarkPoseAI />} />
-          <Route path="/landmark-pose-ai-2" element={<LandmarkPoseAI />} />
 
         </Route>
       </Routes>

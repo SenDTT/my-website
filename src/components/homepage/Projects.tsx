@@ -21,7 +21,7 @@ export default function Projects() {
         {
             title: "Landmark Pose AI",
             image: landmarkPoseAi,
-            link: "/landmark-pose-ai",
+            link: "/projects/landmark-pose-ai",
             target: "_top"
         },
         {

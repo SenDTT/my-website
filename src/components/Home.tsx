@@ -13,7 +13,7 @@ export default function Home() {
                 keywords="Sen Doan, portfolio, web developer, web designer, React developer, front-end developer, UI/UX designer, JavaScript, TypeScript, web development, web design, software engineer, full-stack developer"
                 author="Sen Doan"
                 url="https://sendoan.com"
-                image="https://sendoan.com/images/portfolio.png"
+                image="https://sendoan.com/images/portfolio.png?force=1"
             />
             <Hero />
             {/* <About />*/}

@@ -15,7 +15,7 @@ export default function LandmarkPoseAI() {
                 keywords="pose suggestion AI, landmark photo tips, React project, FastAPI, Tailwind CSS, MongoDB, Sen Doan, AI photography"
                 author="Sen Doan"
                 url="https://sendoan.com/projects/landmark-pose-ai"
-                image="https://sendoan.com/images/landmark-pose-ai-preview.jpeg"
+                image="https://sendoan.com/images/landmark-pose-ai-preview.jpeg?force=1"
             />
             <section className="max-w-4xl mx-auto px-4 py-12 text-neutral-800 ">
                 <h2 className="text-3xl font-bold mb-4"><FaCameraRetro className="inline-block text-neutral-800 " /> Landmark Pose AI</h2>

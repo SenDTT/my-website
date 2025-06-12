@@ -4,20 +4,19 @@ import compoareGift from "../../assets/images/compare.gif";
 import { Link } from "react-router-dom";
 import { PiFilmSlateFill } from "react-icons/pi";
 import { FaCameraRetro, FaCheck, FaHandshake } from "react-icons/fa6";
-import { Helmet } from "react-helmet";
+import Seo from "../../utils/SEO";
 
 export default function LandmarkPoseAI() {
     return (
         <>
-            <Helmet>
-                <title>Landmark Pose AI – Photo Posing Assistant</title>
-                <meta name="description" content="AI-generated pose suggestions based on your landmark photo. Collaborated using HP AI Studio and built with React, Tailwind CSS, and FastAPI." />
-                <meta property="og:title" content="Landmark Pose AI – Photo Posing Assistant" />
-                <meta property="og:description" content="AI-generated pose suggestions based on your landmark photo. Built with FastAPI, React, and MongoDB." />
-                <meta property="og:image" content="https://sendoan.com/images/landmark-pose-ai-preview.jpeg" />
-                <meta property="og:url" content="https://sendoan.com/projects/landmark-pose-ai" />
-                <meta name="twitter:card" content="summary_large_image" />
-            </Helmet>
+            <Seo
+                title="Landmark Pose AI"
+                description="Upload or capture photos at famous landmarks and get pose suggestions using AI. Built with React, Tailwind CSS, FastAPI, and MongoDB."
+                keywords="pose suggestion AI, landmark photo tips, React project, FastAPI, Tailwind CSS, MongoDB, Sen Doan, AI photography"
+                author="Sen Doan"
+                url="https://sendoan.com/projects/landmark-pose-ai"
+                image="https://sendoan.com/images/landmark-pose-ai-preview.jpeg"
+            />
             <section className="max-w-4xl mx-auto px-4 py-12 text-neutral-800 ">
                 <h2 className="text-3xl font-bold mb-4"><FaCameraRetro className="inline-block text-neutral-800 " /> Landmark Pose AI</h2>
 

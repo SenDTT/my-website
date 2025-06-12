@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { PiFilmSlateFill } from "react-icons/pi";
 import { FaCameraRetro, FaCheck, FaHandshake } from "react-icons/fa6";
 import { Helmet } from "react-helmet";
-import landmarkPoseAI from "../../assets/images/landmark-pose-ai-preview.jpeg";
 
 export default function LandmarkPoseAI() {
     return (
@@ -15,7 +14,7 @@ export default function LandmarkPoseAI() {
                 <meta name="description" content="AI-generated pose suggestions based on your landmark photo. Collaborated using HP AI Studio and built with React, Tailwind CSS, and FastAPI." />
                 <meta property="og:title" content="Landmark Pose AI – Photo Posing Assistant" />
                 <meta property="og:description" content="AI-generated pose suggestions based on your landmark photo. Built with FastAPI, React, and MongoDB." />
-                <meta property="og:image" content={landmarkPoseAI} />
+                <meta property="og:image" content="https://sendoan.com/images/landmark-pose-ai-preview.jpeg" />
                 <meta property="og:url" content="https://sendoan.com/projects/landmark-pose-ai" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Helmet>

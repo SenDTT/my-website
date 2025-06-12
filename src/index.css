@@ -210,3 +210,16 @@
         animation: fade-in-slide 0.8s ease-out forwards;
     }
 }
+
+.my-progress-bar {
+    width: 0;
+    height: 0.2rem;
+    animation: grow linear forwards;
+    animation-timeline: scroll();
+}
+
+@keyframes grow {
+    to {
+        width: 100%;
+    }
+}

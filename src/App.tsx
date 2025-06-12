@@ -15,7 +15,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} /> */}
         </Route>
         <Route element={<LayoutWithoutFooter />}>
-          <Route path="/landmark-pose-ai" element={<LandmarkPoseAI />} />
+          <Route path="/projects/landmark-pose-ai" element={<LandmarkPoseAI />} />
 
         </Route>
       </Routes>

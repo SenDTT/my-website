@@ -21,8 +21,7 @@ export default function Projects() {
         {
             title: "Landmark Pose AI",
             image: landmarkPoseAi,
-            link: "/projects/landmark-pose-ai",
-            target: "_top"
+            link: "https://medium.com/@sendoan.sophie/landmark-pose-ai-79e8b087b8c6",
         },
         {
             title: "Portfolio Website with Theme Toggle",
@@ -116,7 +115,7 @@ export default function Projects() {
                     >
                         <Link
                             to={project.link}
-                            target={project?.target ?? "_blank"}
+                            target="_blank"
                             rel="noopener noreferrer"
                             className="inline-block px-4 py-2 rounded transition-colors text-center"
                         >

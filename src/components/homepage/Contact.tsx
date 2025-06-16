@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import profileImage from '../../assets/images/profile/profile_1.jpg';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
+import { FaMedium } from 'react-icons/fa';
 
 export default function Contact() {
 
@@ -40,6 +41,10 @@ export default function Contact() {
                             className="text-dark-contactBg dark:text-light-contactBg transform hover:rotate-12 transition-transform duration-200"
                         >
                             <MdOutlineMail className="inline-block size-4 md:size-5" />
+                        </Link>
+                        <Link to="https://medium.com/@sendoan.sophie"
+                            className="text-dark-contactBg dark:text-light-contactBg transform hover:rotate-12 transition-transform duration-200">
+                            <FaMedium className="inline-block size-4 md:size-5" />
                         </Link>
                     </div>
                 </div>

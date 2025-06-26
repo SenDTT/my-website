@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 .pnp*
 .yarn
-yarn.lock

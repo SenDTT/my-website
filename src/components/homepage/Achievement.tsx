@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import { useTheme } from "../../context/ThemeContext";
 import Skills from "./Skills";
 
-export default function Achievement() {
+export default function Achievement({className = ''}: { className?: string }) {
     const { theme } = useTheme();
 
     return (
-        <div className="flex flex-col items-start justify-start md:min-h-screen bg-dark-contactBg dark:bg-light-contactBg text-light-text dark:text-dark-text md:text-light-buttonText md:dark:text-dark-buttonText md:bg-light-bg md:dark:bg-dark-bg">
+        <div className={`flex flex-col items-start justify-start md:min-h-screen bg-dark-contactBg dark:bg-light-contactBg text-light-text dark:text-dark-text md:text-light-buttonText md:dark:text-dark-buttonText md:bg-light-bg md:dark:bg-dark-bg ${className ?? ''}`}>
             <h1 className="hidden md:flex text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay md:py-0 py-4 w-full text-center md:text-left px-4 md:px-6">
                 Skills & Achievements
             </h1>

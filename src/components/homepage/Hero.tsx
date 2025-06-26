@@ -4,10 +4,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
 import { FaMedium } from 'react-icons/fa';
 
-export default function Hero() {
+export default function Hero({className = ''}: { className?: string }) {
 
     return (
-        <section className="md:min-h-screen flex flex-col md:flex-row items-center md:justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg my-6 md:my-0">
+        <section className={`md:min-h-screen flex flex-col md:flex-row items-center md:justify-center gap-6 md:gap-8 p-4 md:p-6 text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg my-6 md:my-0 ${className ?? ''}`}>
             <div className="backdrop-blur-md animated-bg-light dark:animated-bg-dark border-2 border-light-buttonHoverBg/20 dark:border-dark-buttonHoverBg/20 rounded-2xl p-6 md:p-8 w-full max-w-sm md:max-w-md shadow-xl text-center animate-slide-right animationDelay-slideleft">
                 {/* Profile Picture */}
                 <div className="flex justify-center mb-4 md:mb-6">

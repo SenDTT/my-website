@@ -4,10 +4,10 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa6';
 import { MdOutlineMail } from 'react-icons/md';
 import { FaMedium } from 'react-icons/fa';
 
-export default function Contact() {
+export default function Contact({ className = '' }: { className: string }) {
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-dark-contactBg dark:bg-light-contactBg text-light-text dark:text-dark-text">
+        <div className={`flex flex-col items-center justify-center min-h-screen bg-dark-contactBg dark:bg-light-contactBg text-light-text dark:text-dark-text ${className ?? ''}`}>
             <div className="max-w-7xl md:w-full w-11/12 p-4 md:p-6 bg-light-contactBg dark:bg-dark-contactBg rounded-lg flex flex-col md:flex-row justify-center md:items-center gap-0 md:gap-4">
                 <div className='w-full md:w-1/2 mx-auto flex justify-center items-center mb-4 md:mb-0 animate-fade-in-delay'>
                     <img src={profileImage} alt="Profile" className="w-full" />

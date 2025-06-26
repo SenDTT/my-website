@@ -13,7 +13,7 @@ import blueone from '../../assets/images/blueone.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 
-export default function Projects() {
+export default function Projects({className = ''}: {className?: string}) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const { theme } = useTheme();
 
@@ -94,7 +94,7 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center py-8 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4">
+        <div className={`flex flex-col items-center justify-center py-8 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4 ${className ?? ''}`}>
             <h1 className="text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right mt-6 md:mt-0">
                 Projects
             </h1>

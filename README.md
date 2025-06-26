@@ -12,6 +12,7 @@ Visit my website: [sendoan.com](https://sendoan.com/)
 - **Styling**: Tailwind CSS
 - **Bundler**: Vite
 - **Linting**: ESLint with TypeScript support
+- **Animation**: GSAP
 
 ---
 

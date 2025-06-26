@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overscroll-behavior: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#smooth-content .home {
+    overflow: visible;
+    width: 100%;
+    /* set a height because the contents are position: absolute, thus natively there's no height */
+    height: 4000px;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.07) 2px,
+            transparent 2px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 2px, transparent 2px),
+        linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.home .header {
+    padding-top: 100px;
+}
+
+.home .header h1 {
+    margin-bottom: 1rem;
+}
+
+button {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    line-height: 100px;
+    text-align: center;
+    will-change: transform;
+}
+
+.box-a {
+    top: 200px;
+}
+
+.box-b {
+    top: 600px;
+}
+
+.box-c {
+    top: 1000px;
+}
+
+.line {
+    visibility: hidden;
+    width: 2px;
+    height: 4000px;
+    position: absolute;
+    left: 400px;
+    top: 0px;
+    background-color: #777;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.end {
+    position: absolute;
+    /*   bottom: 0; */
+    top: 2400px;
+    transform: translateY(-100%);
+    font-size: 30px;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul a {
+    color: var(--light);
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+header .icon {
+    padding-left: 1rem;
+}
+
+/* IMAGES */
+.container {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.spacer {
+    height: 100vh;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 33.3vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+
+.image-grid .image_cont {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+    max-height: 500px;
+}
+
+.image-grid img {
+    position: absolute;
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+    bottom: 0;
+}
+
+.image-grid .image_cont:nth-child(1) {
+    grid-column: 1/-1;
+    grid-row: 1;
+    height: 95vh;
+}
+
+.image-grid .image_cont:nth-child(2) {
+    grid-column: 2 / span 8;
+    grid-row: 2;
+    height: 60vh;
+}
+
+.image-grid .image_cont:nth-child(3) {
+    grid-column: 4 / span 8;
+    grid-row: 3;
+    height: 60vh;
+}
+
+.image-grid .image_cont:nth-child(3) img {
+    object-position: right;
+}
+
+.image-grid .image_cont:nth-child(4) {
+    grid-column: 1/-1;
+    grid-row: 4;
+    height: 60vh;
+}
+
+.image-grid .image_cont:nth-child(5) {
+    grid-column: 4 / span 8;
+    grid-row: 5;
+    height: 80vh;
+}
+
+.image-grid .image_cont:nth-child(6) {
+    grid-column: 2 / span 8;
+    grid-row: 6;
+    height: 80vh;
+}
+
+@media screen and (min-width: 1000px) {
+    .image-grid .image_cont {
+        max-height: unset;
+    }
+
+    .image-grid .image_cont:nth-child(2) {
+        grid-column: 2 / span 4;
+    }
+
+    .image-grid .image_cont:nth-child(3) {
+        grid-column: 8 / span 4;
+    }
+
+    .image-grid .image_cont:nth-child(5) {
+        grid-column: 8 / span 4;
+    }
+
+    .image-grid .image_cont:nth-child(6) {
+        grid-column: 2 / span 4;
+    }
+}
+
+.overlay {
+    position: fixed;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 10rem;
+    width: 100vw;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.overlay div {
+    opacity: 0.2;
+    border-left: 0.5px white solid;
+    border-right: 0.5px white solid;
+}

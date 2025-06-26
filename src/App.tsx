@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import LandmarkPoseAI from "./components/pages/LandmarkPoseAI";
 import LayoutWithoutFooter from "./components/LayoutWithoutFooter";
+import ImagesPage from "./components/pages/Projects";
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
         </Route>
         <Route element={<LayoutWithoutFooter />}>
           <Route path="/projects/landmark-pose-ai" element={<LandmarkPoseAI />} />
-
+          <Route path="/projects" element={<ImagesPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

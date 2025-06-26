@@ -1,7 +1,22 @@
-import React from 'react';
-import '../../styles/projects.css';
+// import { useLocation } from 'react-router';
+
+import gsap from 'gsap';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
+import { useGSAP } from '@gsap/react';
+import "../../styles/projects.css";
+
+gsap.registerPlugin(ScrollSmoother, useGSAP);
 
 const ImagesPage = () => {
+    // const location = useLocation();
+
+    // useGSAP(() => {
+    //     ScrollSmoother.create({
+    //         smooth: 1,
+    //         effects: true,
+    //     });
+    // }, [location]);
+
     return (
         <main className="images">
             <section className="image-grid container">

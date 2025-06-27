@@ -95,13 +95,13 @@ export default function Projects({ className = '' }: { className?: string }) {
     }, []);
 
     return (
-        <div className={`flex flex-col items-center md:items-end justify-center md:justify-end py-8 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4 ${className ?? ''}`}>
-            <Link target='top' to={"/projects"} className='relative flex justify-center md:justify-end mb-4 md:mb-6'>
-                <h1 className="text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right mt-6 md:mt-0">
-                    Projects
-                </h1>
-                <TbHandClick className="absolute animate-bounce text-xl md:text-2xl -bottom-6 left-1/2 dark:text-dark-contactBg text-light-contactBg" />
-            </Link>
+        <div className={`flex flex-col items-center md:items-end justify-center py-8 md:py-0 md:min-h-screen text-light-buttonText dark:text-dark-buttonText bg-light-bg dark:bg-dark-bg px-4 md:px-6 gap-4 ${className ?? ''}`}>
+            {/* <Link target='top' to={"/projects"} className='relative flex justify-center md:justify-end mb-4 md:mb-6'> */}
+            <h1 className="text-2xl md:text-8xl font-bold text-light-buttonText dark:text-dark-buttonText animate-fade-in-delay w-full text-center md:text-right mt-6 md:mt-0">
+                Projects
+            </h1>
+            {/* <TbHandClick className="absolute animate-bounce text-xl md:text-2xl -bottom-6 left-1/2 dark:text-dark-contactBg text-light-contactBg" /> */}
+            {/* </Link> */}
             <p className="text-sm md:text-base mb-4 md:mb-6 opacity-80 text-light-buttonText dark:text-dark-buttonText text-center md:text-right w-full">
                 Here are some of the projects I have worked on. Click on the images to view them.
             </p>

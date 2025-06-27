@@ -7,11 +7,7 @@ import Projects from "./homepage/Projects";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useGSAP } from "@gsap/react";
-
-// Register plugins
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 export default function Home() {
     const main = useRef<HTMLElement | null>(null);

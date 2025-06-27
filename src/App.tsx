@@ -5,6 +5,15 @@ import LayoutWithoutFooter from "./components/layouts/LayoutWithoutFooter";
 import ImagesPage from "./components/pages/Projects";
 import Layout from "./components/layouts/Layout";
 import LayoutLandingPage from "./components/layouts/LayoutLandingPage";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import LayoutEmpty from "./components/layouts/LayoutEmpty";
+import ProductIntroPage from "./components/pages/ProductIntroPage";
+
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger, ScrollToPlugin, useGSAP);
 
 export default function App() {
   return (
@@ -21,6 +30,9 @@ export default function App() {
         </Route>
         <Route element={<LayoutLandingPage />}>
           <Route path="/projects" element={<ImagesPage />} />
+        </Route>
+        <Route element={<LayoutEmpty />}>
+          <Route path="/product-intro-page" element={<ProductIntroPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

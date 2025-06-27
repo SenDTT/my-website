@@ -39,7 +39,7 @@ const ProductIntroPage = () => {
         ScrollTrigger.matchMedia({
             // Desktop and tablet
             "(min-width: 768px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any, index: number) => {
+                gsap.utils.toArray('.content .items').forEach((el: any) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 50, x: 0 },

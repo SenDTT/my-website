@@ -12,7 +12,7 @@ import landmarkPoseAi from '../../assets/images/landmark_pose_ai.png';
 import blueone from '../../assets/images/blueone.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
-import { TbHandClick } from 'react-icons/tb';
+//import { TbHandClick } from 'react-icons/tb';
 
 export default function Projects({ className = '' }: { className?: string }) {
     const scrollRef = useRef<HTMLDivElement>(null);

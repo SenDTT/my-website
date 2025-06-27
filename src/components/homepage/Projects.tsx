@@ -13,12 +13,18 @@ import blueone from '../../assets/images/blueone.png';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 //import { TbHandClick } from 'react-icons/tb';
+import gsapDemoImage from '../../assets/images/gsap_demo.png'; // Import your GSAP demo image
 
 export default function Projects({ className = '' }: { className?: string }) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const { theme } = useTheme();
 
     const projects = [
+        {
+            title: "GSAP Scroll Animations Demo",
+            image: gsapDemoImage,
+            link: "/gsap-demo",
+        },
         {
             title: "Landmark Pose AI",
             image: landmarkPoseAi,

@@ -295,7 +295,7 @@ body {
 .image-grid .image_cont:nth-child(3) {
     grid-column: 4 / span 10;
     grid-row: 3;
-    height: 60vh;
+    height: 80vh;
 }
 
 .image-grid .image_cont:nth-child(3) img {
@@ -305,7 +305,7 @@ body {
 .image-grid .image_cont:nth-child(4) {
     grid-column: 1/-1;
     grid-row: 4;
-    height: 60vh;
+    height: 80vh;
     margin: 0 2rem;
 }
 
@@ -365,7 +365,7 @@ body {
 
 #smooth-wrapper,
 #product-intro-page {
-    @apply bg-stone-950 text-white;
+    @apply bg-stone-800 text-white;
 }
 
 #product-intro-page .hero {
@@ -386,11 +386,12 @@ body {
 }
 
 #product-intro-page .banner .banner-image {
-    @apply absolute z-10 inset-0 w-full h-full flex flex-row flex-wrap items-center justify-start;
+    @apply absolute z-10 w-lvw h-lvh flex flex-row flex-wrap items-center justify-start;
+    inset: -2rem 0;
 }
 
 #product-intro-page .banner .banner-image .box {
-    @apply lg:w-[4.41rem] lg:h-[4.41rem] md:w-[6.13rem] md:h-[6.13rem] w-[3.87rem] h-[3.87rem] bg-green-700;
+    @apply lg:w-[4.75rem] lg:h-[4.75rem] md:w-[6.13rem] md:h-[6.13rem] w-[3.87rem] h-[3.87rem] bg-green-700;
 }
 
 #product-intro-page .first-section {
@@ -423,6 +424,14 @@ body {
     color: white;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.caption {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: black;
+    opacity: 0.7;
+    @apply flex z-10 bottom-0 left-0 absolute items-start flex-col;
 }
 
 @media screen and (min-width: 1000px) {

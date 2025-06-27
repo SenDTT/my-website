@@ -11,7 +11,7 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import LayoutEmpty from "./components/layouts/LayoutEmpty";
-import ProductIntroPage from "./components/pages/ProductIntroPage";
+import GsapDemoPage from "./components/pages/GsapDemoPage";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger, ScrollToPlugin, useGSAP);
 
@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/projects" element={<ImagesPage />} />
         </Route>
         <Route element={<LayoutEmpty />}>
-          <Route path="/product-intro-page" element={<ProductIntroPage />} />
+          <Route path="/gsap-demo" element={<GsapDemoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -7,6 +7,7 @@ import { FiCheckCircle } from 'react-icons/fi';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaLocationPin } from 'react-icons/fa6';
 import Gallery from '../gsap/Gallery';
+import Seo from '../../utils/SEO';
 
 const GsapDemoPage = () => {
     const location = useLocation();
@@ -219,6 +220,14 @@ const GsapDemoPage = () => {
 
     return (
         <div id="smooth-wrapper">
+            <Seo
+                title="GSAP Demo - Welcome to Vietnam"
+                description="Explore Vietnam's stunning landscapes through smooth GSAP animations and a responsive Vietnam photo gallery."
+                keywords="Sen Doan, GSAP demo, Vietnam landscapes"
+                author="Sen Doan"
+                url="https://sendoan.com/gsap-demo"
+                image="https://sendoan.com/images/gsap-demo.png?force=1"
+            />
             <div id="smooth-content" ref={container}>
                 <main id="product-intro-page" className="images">
                     <section className="hero container">

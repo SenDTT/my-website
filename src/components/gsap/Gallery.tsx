@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function Gallery() {
     useGSAP(() => {
-        gsap.utils.toArray('.gallery-item').forEach((item: any) => {
+        gsap.utils.toArray<HTMLDivElement>('.gallery-item').forEach((item) => {
             gsap.to(item, {
                 opacity: 1,
                 y: 0,

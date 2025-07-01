@@ -19,7 +19,7 @@ const GsapDemoPage = () => {
 
     useGSAP(() => {
         // banner
-        gsap.utils.toArray('.banner-image .box').forEach((el: any) => {
+        gsap.utils.toArray<HTMLDivElement>('.banner-image .box').forEach((el) => {
             gsap.to(el, {
                 duration: 2,
                 scale: 0,
@@ -44,7 +44,7 @@ const GsapDemoPage = () => {
         ScrollTrigger.matchMedia({
             // Desktop and tablet
             "(min-width: 768px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 50, x: 0 },
@@ -68,7 +68,7 @@ const GsapDemoPage = () => {
 
             // Mobile - simpler animation
             "(max-width: 767px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 30 },
@@ -112,7 +112,7 @@ const GsapDemoPage = () => {
         ScrollTrigger.matchMedia({
             // Desktop and tablet
             "(min-width: 768px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 50, x: 100 },
@@ -136,7 +136,7 @@ const GsapDemoPage = () => {
 
             // Mobile - simpler animation
             "(max-width: 767px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 30 },
@@ -163,7 +163,7 @@ const GsapDemoPage = () => {
         ScrollTrigger.matchMedia({
             // Desktop and tablet
             "(min-width: 768px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 50, x: 0 },
@@ -187,7 +187,7 @@ const GsapDemoPage = () => {
 
             // Mobile - simpler animation
             "(max-width: 767px)": () => {
-                gsap.utils.toArray('.content .items').forEach((el: any) => {
+                gsap.utils.toArray<HTMLDivElement>('.content .items').forEach((el) => {
                     gsap.fromTo(
                         el,
                         { opacity: 0, y: 30 },

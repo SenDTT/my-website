@@ -14,12 +14,18 @@ import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 //import { TbHandClick } from 'react-icons/tb';
 import gsapDemoImage from '../../assets/images/gsap_demo.png'; // Import your GSAP demo image
+import coffeeShopImage from '../../assets/images/coffe_shop.png';
 
 export default function Projects({ className = '' }: { className?: string }) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const { theme } = useTheme();
 
     const projects = [
+        {
+            title: "Coffee Shop Web App",
+            image: coffeeShopImage,
+            link: "https://github.com/SenDTT/coffee-shop",
+        },
         {
             title: "GSAP Scroll Animations Demo",
             image: gsapDemoImage,

@@ -469,7 +469,7 @@ body {
     @apply px-4 py-12 container mx-auto my-20;
 }
 
-.panel {
+.section-panel {
   height: 100vh;
   position: sticky;
   top: 0;
@@ -559,7 +559,7 @@ body {
         grid-column: 2 / span 10;
     }
   
-    .panel {
+    .section-panel {
         height: auto;
         position: unset;
     }
